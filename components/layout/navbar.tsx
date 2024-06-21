@@ -6,6 +6,7 @@ import useScroll from "@/lib/hooks/use-scroll";
 import { useSignInModal } from "./sign-in-modal";
 import UserDropdown from "./user-dropdown";
 import { Session } from "next-auth";
+import { SheetDemo } from "../shared/sheet";
 
 export default function NavBar({ session }: { session: Session | null }) {
   const { SignInModal, setShowSignInModal } = useSignInModal();
@@ -31,15 +32,30 @@ export default function NavBar({ session }: { session: Session | null }) {
               className="mr-2 rounded-sm"
             ></Image>
           </Link>
-          <div>
+          <div className="flex lg:hidden">
+            <SheetDemo session={null} />
+          </div>
+          <div className="hidden lg:flex justify-center gap-8 items-center">
+            <Link href="/best-student" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
+              Best Student
+            </Link>
+            <Link href="/after-movie" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
+              After Movie
+            </Link>
+            <Link href="/staff-sds" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
+              Staff SDS
+            </Link>
+            <Link href="/partner" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
+              Partner
+            </Link>
             {session ? (
               <UserDropdown session={session} />
             ) : (
               <button
-                className="rounded-full bg-gradient-to-r from-[#af83da] to-[#72cff4] p-1.5 px-4 text-white font-display transition-all hover:shadow-lg hover:scale-105"
+                className="rounded-full bg-gradient-to-r from-[#9e64d7] to-[#61b0cf] p-1.5 px-4 text-white font-display transition-all hover:shadow-lg hover:scale-105"
                 onClick={() => setShowSignInModal(true)}
               >
-                Login
+                Sign In
               </button>
             )}
           </div>
