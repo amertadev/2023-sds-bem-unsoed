@@ -36,10 +36,10 @@ export default function NavBar({ session }: { session: Session | null }) {
               <UserDropdown session={session} />
             ) : (
               <button
-                className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                className="rounded-full bg-gradient-to-r from-[#af83da] to-[#72cff4] p-1.5 px-4 text-white font-display transition-all hover:shadow-lg hover:scale-105"
                 onClick={() => setShowSignInModal(true)}
               >
-                Sign In
+                Login
               </button>
             )}
           </div>
