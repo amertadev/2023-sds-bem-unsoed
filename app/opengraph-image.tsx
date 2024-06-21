@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 export const alt = "Soedirman Digital School - BEM UNSOED | SDS is an online course event on technology organized by BEM UNSOED for students and the public";
-export const contentType = "image/png";
+export const contentType = "image/svg+xml";
 
 export default async function OG() {
   const sfPro = await fetch(
@@ -26,7 +26,7 @@ export default async function OG() {
         }}
       >
         <img
-          src={`https://${process.env.VERCEL_URL || "sds-bem-unsoed.vercel.app"}/assets/logo.svg`}
+          src="https://sds-bem-unsoed.vercel.app/assets/logo.svg"
           alt="SDS Logo"
           width={80}
           height={80}

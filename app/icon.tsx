@@ -8,7 +8,7 @@ export const size = {
   width: 32,
   height: 32,
 }
-export const contentType = 'image/png'
+export const contentType = 'image/svg+xml'
  
 // Image generation
 export default function Icon() {
@@ -16,8 +16,10 @@ export default function Icon() {
     (
       // ImageResponse JSX element
       <img 
-        src={`https://${process.env.VERCEL_URL || 'your-default-domain.com'}/assets/logo.png`} 
-        alt="SDS Logo" 
+        src="https://sds-bem-unsoed.vercel.app/assets/icon.svg"
+        alt="SDS Icon" 
+        width={size.width}
+        height={size.height}
         style={{ width: '100%', height: '100%' }}
       />
     ),
