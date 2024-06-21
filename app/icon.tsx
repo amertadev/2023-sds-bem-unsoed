@@ -15,7 +15,11 @@ export default function Icon() {
   return new ImageResponse(
     (
       // ImageResponse JSX element
-      <img src="/assets/logo.png" alt="SDS Logo" />
+      <img 
+        src={`https://${process.env.VERCEL_URL || 'your-default-domain.com'}/assets/logo.png`} 
+        alt="SDS Logo" 
+        style={{ width: '100%', height: '100%' }}
+      />
     ),
     // ImageResponse options
     {

@@ -28,7 +28,14 @@ export default async function OG() {
         <img
           src={`https://${process.env.VERCEL_URL || "sds-bem-unsoed.vercel.app"}/assets/logo.svg`}
           alt="SDS Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
+          width={80}
+          height={80}
+          style={{
+            width: '80px',
+            height: '80px',
+            marginBottom: '16px',
+            opacity: 0.95,
+          }}
         />
       </div>
     ),
