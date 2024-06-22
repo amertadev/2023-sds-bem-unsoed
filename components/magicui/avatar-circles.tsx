@@ -15,7 +15,7 @@ const AvatarCircles = ({ numPeople, className, avatarUrls }: AvatarCirclesProps)
       {avatarUrls.map((url, index) => (
         <img
           key={index}
-          className="h-10 w-10 rounded-full"
+          className="h-10 w-10 rounded-full border-4 border-white"
           src={url}
           width={40}
           height={40}
@@ -23,7 +23,7 @@ const AvatarCircles = ({ numPeople, className, avatarUrls }: AvatarCirclesProps)
         />
       ))}
       <div
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-[#292a41] text-center text-xs font-display text-white"
+        className="flex h-10 w-10 items-center justify-center rounded-full bg-[#292a41] text-center text-xs font-display text-white border-4 border-white"
       >
         +{numPeople}
       </div>

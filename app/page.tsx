@@ -8,6 +8,7 @@ import { nFormatter } from "@/lib/utils";
 import { TextBox } from "@/components/shared/text-box";
 import { ShimmerButtonDemo } from "@/components/shared/shimmer-button";
 import { AvatarCirclesDemo } from "@/components/shared/avatar-circles";
+import CountdownTimer from "@/components/home/countdown";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
@@ -43,11 +44,11 @@ export default async function Home() {
           Investasikan waktumu dalam pembelajaran teknologi berkualitas dan raih peluang karir yang tak terbatas di era digital.
         </p>
         <div
-          className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
+          className="mx-auto mt-6 flex animate-fade-up justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
           <a href="#course"><ShimmerButtonDemo /></a>
-          <AvatarCirclesDemo />
+          <CountdownTimer dateTime="2024-09-18T23:59:00" />
         </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
@@ -56,13 +57,7 @@ export default async function Home() {
             key={title}
             title={title}
             description={description}
-            demo={
-              title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
-              ) : (
-                demo
-              )
-            }
+            demo={demo}
             large={large}
           />
         ))}
@@ -76,6 +71,7 @@ const features = [
     title: "Beautiful, reusable components",
     description:
       "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com), [Radix UI](https://www.radix-ui.com), and [Framer Motion](https://framer.com/motion). Used in production on [Dub.co](https://dub.co).",
+    demo: <ComponentGrid />,
     large: true,
   },
   {
