@@ -52,7 +52,7 @@ export default function Course() {
                             </span>
                         </p>
                     </div>
-                    <List className="mt-4 divide-y-0 text-tremor-content-emphasis">
+                    <List className="mt-4 mb-11 divide-y-0 text-tremor-content-emphasis">
                         {features.map((item, index) => (
                             <ListItem
                                 key={item.id}
@@ -128,7 +128,7 @@ export default function Course() {
                             </span>
                         </p>
                     </div>
-                    <List className="mt-4 mb-[63px] divide-y-0 text-tremor-content-emphasis">
+                    <List className="mt-4 mb-11 divide-y-0 text-tremor-content-emphasis">
                         {features.map((item, index) => (
                             <ListItem
                                 key={item.id}
