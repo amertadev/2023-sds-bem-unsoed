@@ -32,12 +32,12 @@ const features = [
 
 export default function Course() {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="px-6 lg:max-w-6xl lg:mx-auto">
             <div className="p-2 border bg-white rounded-lg inline-block mb-2">
                 <span className="font-display opacity-70">Learning Path📚</span>
             </div>
-            <div className="flex gap-4">
-                <div className="w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
+            <div className="flex flex-col lg:flex-row gap-4">
+                <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
                     <div className="flex gap-2 h-20 w-full">
                         <img src="/assets/ignasius.svg" alt="Office" className="w-[72px] object-cover mb-2 rounded-lg" />
                         <img src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2" alt="Office" className="w-full object-cover mb-2 rounded-lg" />
@@ -75,7 +75,7 @@ export default function Course() {
                         Daftar Sekarang
                     </a>
                 </div>
-                <div className="w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
+                <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
                     <div className="flex gap-2 h-20 w-full">
                         <img src="/assets/bima.svg" alt="Data Analyst" className="w-[72px] object-cover mb-2 rounded-lg" />
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Data Analyst" className="w-full object-cover mb-2 rounded-lg" />
@@ -113,7 +113,7 @@ export default function Course() {
                         Daftar Sekarang
                     </a>
                 </div>
-                <div className="w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
+                <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
                     <div className="flex gap-2 h-20 w-full">
                         <img src="/assets/agusleo.svg" alt="Market" className="w-[72px] object-cover mb-2 rounded-lg" />
                         <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532" alt="Market" className="w-full object-cover mb-2 rounded-lg" />

@@ -1,38 +1,14 @@
-"use client";
 import { TextBox } from "@/components/shared/text-box";
 import { ShimmerButtonDemo } from "@/components/shared/shimmer-button";
 import CountdownTimer from "@/components/home/countdown";
 import { BentoGridDemo } from "@/components/home/bento";
 import Course from "@/components/home/course";
-import { useEffect } from 'react';
+import ScrollHandler from "@/components/home/scroll-handler";
 
 export default async function Home() {
-  function smoothScrollTo(elementId: string, offset = 0) {
-    const element = document.getElementById(elementId);
-    if (element) {
-      const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  }
-  useEffect(() => {
-    const handleClick = (e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-      smoothScrollTo('course', -100); // Adjust -100 to move it slightly higher
-    };
-
-    const button = document.querySelector('a[href="#course"]');
-    if (button) {
-      button.addEventListener('click', handleClick);
-    }
-
-    return () => {
-      if (button) {
-        button.removeEventListener('click', handleClick);
-      }
-    };
-  }, []);
   return (
     <>
+      <ScrollHandler />
       <div className="z-10 w-full max-w-2xl px-5 xl:px-0">
         <a href="https://drive.google.com/"><TextBox /></a>
         <h1
@@ -51,7 +27,7 @@ export default async function Home() {
           className="mx-auto mt-6 flex flex-col md:flex-row items-center md:items-start gap-4 animate-fade-up justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
-          <a href="#course" onClick={(e) => e.preventDefault()}><ShimmerButtonDemo /></a>
+          <a href="#course"><ShimmerButtonDemo /></a>
           <CountdownTimer dateTime="2024-09-18T23:59:00" />
         </div>
       </div>
