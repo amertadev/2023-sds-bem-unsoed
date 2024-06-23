@@ -14,7 +14,7 @@ export default function ScrollHandler() {
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       e.preventDefault();
-      smoothScrollTo('course', -100);
+      smoothScrollTo('course', -30);
     };
 
     const button = document.querySelector('a[href="#course"]') as HTMLAnchorElement;

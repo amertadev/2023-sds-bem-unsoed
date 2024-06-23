@@ -35,11 +35,11 @@ export default async function Home() {
       <div className="z-10 mt-10 w-full">
         <BentoGridDemo />
       </div>
-      <div id="course" className="z-10 mt-10 w-full">
-        <Course />
-      </div>
       <div className="z-10 mt-20 w-full">
         <CustomizedTimeline />
+      </div>
+      <div id="course" className="z-10 pt-10 w-full">
+        <Course />
       </div>
     </>
   );
