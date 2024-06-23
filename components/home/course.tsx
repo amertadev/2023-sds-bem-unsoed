@@ -32,7 +32,7 @@ const features = [
 
 export default function Course() {
     return (
-        <div className="px-6 lg:max-w-6xl lg:mx-auto">
+        <div className="px-6 lg:max-w-[75rem] lg:mx-auto">
             <div className="p-2 border bg-white rounded-lg inline-block mb-2">
                 <span className="font-display opacity-70">Learning Path📚</span>
             </div>
@@ -52,7 +52,7 @@ export default function Course() {
                             </span>
                         </p>
                     </div>
-                    <List className="mt-4 mb-11 divide-y-0 text-tremor-content-emphasis">
+                    <List className="mt-4 divide-y-0 text-tremor-content-emphasis">
                         {features.map((item, index) => (
                             <ListItem
                                 key={item.id}
@@ -128,7 +128,7 @@ export default function Course() {
                             </span>
                         </p>
                     </div>
-                    <List className="mt-4 mb-11 divide-y-0 text-tremor-content-emphasis">
+                    <List className="mt-4 mb-[63px] divide-y-0 text-tremor-content-emphasis">
                         {features.map((item, index) => (
                             <ListItem
                                 key={item.id}

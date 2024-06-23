@@ -5,6 +5,7 @@ import { BentoGridDemo } from "@/components/home/bento";
 import Course from "@/components/home/course";
 import ScrollHandler from "@/components/home/scroll-handler";
 import CustomizedTimeline from "@/components/mui/timeline";
+import AccordionUsage from "@/components/home/accordion";
 
 export default async function Home() {
   return (
@@ -40,6 +41,9 @@ export default async function Home() {
       </div>
       <div id="course" className="z-10 pt-10 w-full">
         <Course />
+      </div>
+      <div className="z-10 pt-10 w-full">
+        <AccordionUsage />
       </div>
     </>
   );
