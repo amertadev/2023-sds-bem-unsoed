@@ -50,7 +50,7 @@ export async function Coc() {
                             <div className="h-8 w-[2px] bg-white"></div>
                             <div className="flex flex-col">
                                 <h3 className='text-xs opacity-80 leading-tight'>Instagram :</h3>
-                                <a className='text-sm leading-tight' href="https://www.instagram.com/naufalh1d/" target="_blank">@naufalh1d</a>
+                                <a className='text-sm leading-tight' href="https://www.instagram.com/naufalh1d/" target="_blank" rel="noreferrer">@naufalh1d</a>
                             </div>
                         </div>
                         <div className="text-[10px] md:text-xs text-center rounded-b-lg bg-[#3a3c67] text-white font-default tracking-tighter py-2">
@@ -84,7 +84,7 @@ export async function Coc() {
                             <div className="h-8 w-[2px] bg-white"></div>
                             <div className="flex flex-col">
                                 <h3 className='text-xs opacity-80 leading-tight'>Instagram :</h3>
-                                <a className='text-sm leading-tight' href="https://www.instagram.com/hanifh1nif/" target="_blank">@hanifh1nif</a>
+                                <a className='text-sm leading-tight' href="https://www.instagram.com/hanifh1nif/" target="_blank" rel="noreferrer">@hanifh1nif</a>
                             </div>
                         </div>
                         <div className="text-[10px] md:text-xs text-center rounded-b-lg bg-[#3a3c67] text-white font-default tracking-tighter py-2">
@@ -118,7 +118,7 @@ export async function Coc() {
                             <div className="h-8 w-[2px] bg-white"></div>
                             <div className="flex flex-col">
                                 <h3 className='text-xs opacity-80 leading-tight'>Instagram :</h3>
-                                <a className='text-sm leading-tight' href="https://www.instagram.com/dindah1n/" target="_blank">@dindah1n</a>
+                                <a className='text-sm leading-tight' href="https://www.instagram.com/dindah1n/" target="_blank" rel="noreferrer">@dindah1n</a>
                             </div>
                         </div>
                         <div className="text-[10px] md:text-xs text-center rounded-b-lg bg-[#3a3c67] text-white font-default tracking-tighter py-2">

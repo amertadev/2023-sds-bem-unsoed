@@ -9,22 +9,22 @@ export function DockDemo() {
             <p>Follow Our Social Media:</p>
             <Dock className="bg-white/10 mt-2 -ml-1">
                 <DockIcon>
-                    <a href="https://www.instagram.com/soedirman.digital.school/" target="_blank">
+                    <a href="https://www.instagram.com/soedirman.digital.school/" target="_blank" rel="noreferrer">
                     <Icons.instagram className="h-6 w-6" />
                     </a>
                 </DockIcon>
                 <DockIcon>
-                    <a href="https://www.linkedin.com/company/sekolah-digital-soedirman/" target="_blank">
+                    <a href="https://www.linkedin.com/company/sekolah-digital-soedirman/" target="_blank" rel="noreferrer">
                     <Icons.linkedin className="h-6 w-6" />
                     </a>
                 </DockIcon>
                 <DockIcon>
-                    <a href="gmail.com" target="_blank">
+                    <a href="gmail.com" target="_blank" rel="noreferrer">
                     <Icons.gmail className="h-6 w-6" />
                     </a>
                 </DockIcon>
                 <DockIcon>
-                    <a href="https://wa.me/6285881695835" target="_blank">
+                    <a href="https://wa.me/6285881695835" target="_blank" rel="noreferrer">
                     <Icons.whatsapp className="h-6 w-6" />
                     </a>
                 </DockIcon>

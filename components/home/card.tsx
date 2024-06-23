@@ -28,7 +28,7 @@ export default function Card({
             components={{
               a: ({ node, ...props }) => (
                 <a
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   {...props}
                   className="font-medium text-gray-800 underline transition-colors"
                 />
