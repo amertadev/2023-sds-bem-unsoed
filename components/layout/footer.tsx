@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="absolute w-full py-5 text-center">
+    <div className="absolute w-full px-5 py-5 text-center">
       <p className="text-gray-500">
         Made with 💖 by {" "}
         <a

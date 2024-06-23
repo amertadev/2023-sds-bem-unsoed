@@ -199,6 +199,10 @@ module.exports = {
     },
     transparent: 'transparent',
     current: 'currentColor',
+    screens: {
+      md: '760px',
+      lg: '1024px',
+    }
   },
   plugins: [
     require("tailwindcss-animate"),
