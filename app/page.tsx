@@ -6,13 +6,14 @@ import Course from "@/components/home/course";
 import ScrollHandler from "@/components/home/scroll-handler";
 import CustomizedTimeline from "@/components/mui/timeline";
 import AccordionUsage from "@/components/home/accordion";
+import Partner from "@/components/shared/partner";
 
 export default async function Home() {
   return (
     <>
       <ScrollHandler />
       <div className="z-10 w-full max-w-2xl px-5 xl:px-0">
-        <a href="https://drive.google.com/"><TextBox /></a>
+        <a href="https://bit.ly/GuideBookSDS2023"><TextBox /></a>
         <h1
           className="animate-fade-up bg-gradient-to-br from-[#21223a] to-[#21223a86] bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -41,6 +42,9 @@ export default async function Home() {
       </div>
       <div id="course" className="z-10 pt-10 w-full">
         <Course />
+      </div>
+      <div className="z-10 my-20 w-full">
+        <Partner />
       </div>
       <div className="z-10 pt-10 w-full">
         <AccordionUsage />

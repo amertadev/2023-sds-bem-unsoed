@@ -18,33 +18,10 @@ import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 export default function CustomizedTimeline() {
     return (
         <Timeline position="alternate">
-            <TimelineItem hidden>
-                <TimelineOppositeContent
-                    sx={{ m: 'auto 0' }}
-                    align="right"
-                    variant="body2"
-                    color="text.secondary"
-                >
-                    9:30 am
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot>
-                        <FastfoodIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
-                        Eat
-                    </Typography>
-                    <Typography>Because you need strength</Typography>
-                </TimelineContent>
-            </TimelineItem>
             <div className="w-fit mx-auto p-2 border bg-white rounded-lg inline-block mb-2">
                 <span className="font-display opacity-70">Start Timeline📌</span>
             </div>
-            <TimelineItem>
+            <TimelineItem sx={{ '&:before': { display: 'none' }}}>
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body2"
@@ -65,23 +42,8 @@ export default function CustomizedTimeline() {
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
-            {/* <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary" variant="outlined">
-                        <HotelIcon />
-                    </TimelineDot>
-                    <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
-                        Sleep
-                    </Typography>
-                    <Typography>Because you need rest</Typography>
-                </TimelineContent>
-            </TimelineItem> */}
             <TimelineItem>
-            <TimelineOppositeContent
+                <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body2"
                     color="text.secondary"
@@ -123,7 +85,7 @@ export default function CustomizedTimeline() {
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
-            <TimelineOppositeContent
+                <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body2"
                     color="text.secondary"
@@ -165,7 +127,7 @@ export default function CustomizedTimeline() {
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
-            <TimelineOppositeContent
+                <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body2"
                     color="text.secondary"
