@@ -44,9 +44,9 @@ export async function Coc() {
                     </div>
                     <div className="flex flex-col w-full font-display">
                         <div className="flex justify-between items-center px-4 py-2 bg-[#3a3c67]/80 text-white rounded-t-lg border-b-2 border-white">
-                            <h2 className="text-xl tracking-widest font-bold">FAPERTA</h2>
+                            <h2 className="text-xl tracking-widest font-bold">UMUM</h2>
                             <div className="h-8 w-[1.5px] bg-white"></div>
-                            <h2 className="text-xl font-medium">A1C024019</h2>
+                            <h2 className="text-xl font-medium">SMANSA PWT</h2>
                             <div className="h-8 w-[2px] bg-white"></div>
                             <div className="flex flex-col">
                                 <h3 className='text-xs opacity-80 leading-tight'>Instagram :</h3>
