@@ -13,13 +13,13 @@ export default function Mentor() {
                     <img src="/assets/ignasius.jpg" alt="header ignasius" className="h-20 md:h-24 w-full lg:max-w-2xl object-cover rounded-lg" />
                     <img src="/assets/ignasius.png" alt="ignasius" className="w-20 md:w-24 rounded-full ring-2 md:ring-4 ring-white relative z-10 -mt-10 mx-auto md:ml-6" />
                     <div className="px-2 mt-3 md:-mt-11 flex justify-center md:justify-end gap-2">
-                        <a href="https://instagram.com/ignasiusryan" target="_blank">
+                        <a href="https://instagram.com/ignasiusryan" target="_blank" rel="noreferrer">
                             <InstagramLogoIcon className="h-5 w-5 text-pink-500 hover:text-pink-700" />
                         </a>
-                        <a href="https://twitter.com/ignasiusryan" target="_blank">
+                        <a href="https://twitter.com/ignasiusryan" target="_blank" rel="noreferrer">
                             <Twitter className="h-5 w-5 text-tremor-brand hover:text-tremor-brand-emphasis" />
                         </a>
-                        <a href="https://www.linkedin.com/in/ignasiusryanhasim/" target="_blank">
+                        <a href="https://www.linkedin.com/in/ignasiusryanhasim/" target="_blank" rel="noreferrer">
                             <LinkedInLogoIcon className="h-5 w-5 text-tremor-brand hover:text-tremor-brand-emphasis" />
                         </a>
                     </div>
