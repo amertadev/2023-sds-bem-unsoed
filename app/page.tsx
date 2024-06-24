@@ -13,7 +13,7 @@ export default async function Home() {
     <>
       <ScrollHandler />
       <div className="z-10 w-full max-w-2xl px-5 xl:px-0">
-        <a href="https://bit.ly/GuideBookSDS2023" target="_blank" rel="noreferrer"><TextBox /></a>
+        <a href="https://bit.ly/GuideBookSDS2023" target="_blank" rel="noreferrer"><TextBox text="📘 Download Guidebook Full" /></a>
         <h1
           className="animate-fade-up bg-gradient-to-br from-[#21223a] to-[#21223a86] bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -30,7 +30,7 @@ export default async function Home() {
           className="mx-auto mt-6 flex flex-col md:flex-row items-center md:items-start gap-4 animate-fade-up justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
-          <a href="#course"><ShimmerButtonDemo /></a>
+          <a href="#course"><ShimmerButtonDemo text="Daftar Sekarang" /></a>
           <CountdownTimer dateTime="2024-09-18T23:59:00" />
         </div>
       </div>

@@ -69,10 +69,10 @@ export default function Course() {
                     </List>
                     <Divider />
                     <a
-                        href="#"
+                        href="/microsoft-office"
                         className="block w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand py-2.5 text-center text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis"
                     >
-                        Daftar Sekarang
+                        Selengkapnya
                     </a>
                 </div>
                 <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
@@ -107,10 +107,10 @@ export default function Course() {
                     </List>
                     <Divider />
                     <a
-                        href="#"
+                        href="/data-analyst"
                         className="block w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand py-2.5 text-center text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis"
                     >
-                        Daftar Sekarang
+                        Selengkapnya
                     </a>
                 </div>
                 <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
@@ -145,10 +145,10 @@ export default function Course() {
                     </List>
                     <Divider />
                     <a
-                        href="#"
+                        href="/digital-marketing"
                         className="block w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand py-2.5 text-center text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis"
                     >
-                        Daftar Sekarang
+                        Selengkapnya
                     </a>
                 </div>
             </div>

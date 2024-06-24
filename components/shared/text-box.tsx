@@ -2,7 +2,11 @@ import { cn } from "@/lib/utils";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-export async function TextBox() {
+interface TextBoxProps {
+  text: string;
+}
+
+export async function TextBox({ text }: TextBoxProps) {
   return (
     <div className="z-10 flex min-h-[2rem] items-center justify-center mb-5">
       <div
@@ -11,7 +15,7 @@ export async function TextBox() {
         )}
       >
         <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300">
-          <span>📘 Download Guidebook</span>
+          <span>{text}</span>
           <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
         </AnimatedShinyText>
       </div>
