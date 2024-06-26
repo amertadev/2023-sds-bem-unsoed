@@ -1,10 +1,10 @@
 import { TextBox } from "@/components/shared/text-box";
 import { ShimmerButtonDemo } from "@/components/shared/shimmer-button";
 import ScrollHandler from "@/components/home/scroll-handler";
-import { AnimatedListDemo } from "@/components/course/animated-list";
-import Mentor from "@/components/course/mentor";
 import HelpMO from "@/components/course/help-mo";
 import TestiMO from "@/components/course/testi-mo";
+import MentorMO from "@/components/course/mentor-mo";
+import { SilabusMO } from "@/components/course/silabus-mo";
 
 export default function MicrosoftOffice() {
     return (
@@ -32,10 +32,10 @@ export default function MicrosoftOffice() {
                 </div>
             </div>
             <div className="z-10 lg:px-6 mt-10 w-full flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10">
-                <AnimatedListDemo />
-                <Mentor />
+                <SilabusMO />
+                <MentorMO />
             </div>
-            <div className="z-10 mt-40 w-full">
+            <div className="z-10 mt-10 md:mt-40 w-full">
                 <TestiMO />
             </div>
             <div className="z-10 pt-20 w-full">

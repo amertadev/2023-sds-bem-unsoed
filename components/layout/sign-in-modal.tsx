@@ -33,7 +33,7 @@ const SignInModal = ({
           </a>
           <h3 className="font-display text-2xl font-bold">Sign In</h3>
           <p className="text-sm text-gray-500">
-            Pastikan sudah mendaftar <a href="https://sds-bem-unsoed.vercel.app/#course" className="underline">disini</a> ya! Setelah melakukan sign in kamu bisa mengakses LMS.
+            Pastikan sudah mendaftar <a href="/#course" className="underline">disini</a> ya! Setelah melakukan sign in kamu bisa mengakses LMS.
           </p>
         </div>
 

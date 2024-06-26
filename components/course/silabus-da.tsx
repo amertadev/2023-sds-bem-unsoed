@@ -14,35 +14,35 @@ interface Item {
 let notifications = [
     {
         name: "Camp 1",
-        description: "Pengenalan Microsoft Office Suite",
+        description: "Pengenalan Data Analyst",
         time: "15m ago",
         icon: "💸",
         color: "#00C9A7",
     },
     {
         name: "Camp 2",
-        description: "Microsoft Word Dasar",
+        description: "Dasar Umum Excel",
         time: "10m ago",
         icon: "👤",
         color: "#FFB800",
     },
     {
         name: "Camp 3",
-        description: "Microsoft Word Lanjutan",
+        description: "Dasar Fungsi Excel",
         time: "5m ago",
         icon: "💬",
         color: "#FF3D71",
     },
     {
         name: "Camp 4",
-        description: "Microsoft Excel Dasar",
+        description: "Analisa Excel Dasar",
         time: "2m ago",
         icon: "🗞️",
         color: "#1E86FF",
     },
     {
         name: "Camp 5",
-        description: "Microsoft Excel Lanjutan",
+        description: "Analisa Excel Lanjutan",
         time: "1m ago",
         icon: "📈",
         color: "#F24E1E",
@@ -56,21 +56,21 @@ let notifications = [
     },
     {
         name: "Camp 7",
-        description: "Microsoft PowerPoint",
+        description: "Analisa Excel Expert",
         time: "20s ago",
         icon: "📚",
         color: "#FFB800",
     },
     {
         name: "Camp 8",
-        description: "Microsoft Outlook dan OneNote",
+        description: "Membuat Dashboard",
         time: "15s ago",
         icon: "💻",
         color: "#FF3D71",
     },
     {
         name: "Camp 9",
-        description: "Microsoft Access Dasar",
+        description: "Membuat Report",
         time: "10s ago",
         icon: "📁",
         color: "#1E86FF",
@@ -121,7 +121,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
     );
 };
 
-export function AnimatedListDemo() {
+export function SilabusDA() {
     return (
         <div className="w-full lg:w-fit px-6 lg:px-0">
             <div className="p-2 border bg-white rounded-lg inline-block mb-2">

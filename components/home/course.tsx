@@ -1,5 +1,6 @@
 import { RiCheckboxCircleFill } from '@remixicon/react';
 import { Divider, List, ListItem } from '@tremor/react';
+import Link from 'next/link';
 
 const features = [
     {
@@ -68,12 +69,12 @@ export default function Course() {
                         ))}
                     </List>
                     <Divider />
-                    <a
+                    <Link
                         href="/microsoft-office"
                         className="block w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand py-2.5 text-center text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis"
                     >
                         Selengkapnya
-                    </a>
+                    </Link>
                 </div>
                 <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
                     <div className="flex gap-2 h-20 w-full">
@@ -106,12 +107,12 @@ export default function Course() {
                         ))}
                     </List>
                     <Divider />
-                    <a
+                    <Link
                         href="/data-analyst"
                         className="block w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand py-2.5 text-center text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis"
                     >
                         Selengkapnya
-                    </a>
+                    </Link>
                 </div>
                 <div className="lg:w-1/3 rounded-tremor-default border border-tremor-border bg-white p-6">
                     <div className="flex gap-2 h-20 w-full">
@@ -144,12 +145,12 @@ export default function Course() {
                         ))}
                     </List>
                     <Divider />
-                    <a
+                    <Link
                         href="/digital-marketing"
                         className="block w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand py-2.5 text-center text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis"
                     >
                         Selengkapnya
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

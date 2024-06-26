@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -10,15 +11,6 @@ const nextConfig = {
         pathname: "**",
       },
     ]
-  },
-  async redirects() {
-    return [
-      {
-        source: "/github",
-        destination: "https://github.com/send0moka/sds-bem-unsoed",
-        permanent: false,
-      },
-    ];
   },
 };
 

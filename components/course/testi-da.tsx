@@ -6,23 +6,23 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
     {
-        name: "Naufal Satria",
-        text: "Pelatihan Microsoft Office ini sangat membantu! Dari yang hanya bisa dasar, kini saya menguasai banyak fitur canggih. Instruktur berpengalaman dan materi mudah dipahami. Terima kasih, kini pekerjaan saya jadi lebih efisien dan produktif!",
-        image: "/assets/naufal.png",
+        name: "Hanif Ramadhan",
+        text: "Pelatihan ini membuka mata saya tentang potensi data. Keterampilan analisis yang saya pelajari sangat berharga untuk karier saya. Instrukturnya luar biasa!",
+        image: "/assets/hanif.png",
     },
     {
-        name: "Edryan Hasan",
-        text: "Sangat puas dengan pelatihan ini! Fasilitas lengkap dan nyaman. Banyak trik dan tips baru yang mempercepat pekerjaan di kantor. Excel yang dulunya rumit sekarang jadi lebih mudah digunakan. Sangat direkomendasikan!",
-        image: "https://media.licdn.com/dms/image/D5603AQG56um-zJ5Syw/profile-displayphoto-shrink_800_800/0/1693654231751?e=1724889600&v=beta&t=QDgJRwZfY9Xq4qNXAHXM0XYE1HSlBtk1pQE0s_E3nmg",
+        name: "Arga Aryanta",
+        text: "Materi komprehensif dan latihan praktis membantu saya menguasai tools penting. Sekarang saya lebih percaya diri menghadapi proyek analisis data di kantor.",
+        image: "https://media.licdn.com/dms/image/C5603AQH2h9XE8ysKtA/profile-displayphoto-shrink_800_800/0/1663483813920?e=1724889600&v=beta&t=pS26gOaxVAIZgr-19HV_Kc98lADoHBBiUVzHCmzOJho",
     },
     {
-        name: "Regita Rahman",
-        text: "Pelatihan luar biasa! Saya lebih percaya diri menggunakan Microsoft Office setelah sesi yang komprehensif dan praktis. Materi jelas dan banyak latihan membantu. Instruktur responsif dan sabar. Sangat bermanfaat!",
-        image: "/assets/regita.png",
+        name: "Isna Febriyana",
+        text: "Investasi terbaik untuk pengembangan diri! Saya bisa langsung menerapkan ilmu yang didapat. Pelatihan ini benar-benar mengubah cara saya melihat dan mengolah data.",
+        image: "/assets/isna.png",
     },
 ];
 
-export default function TestiMO() {
+export default function TestiDA() {
     return (
         <div className='space-y-4 px-6 lg:px-52'>
             <div className="p-2 border bg-white rounded-lg inline-block mb-2">

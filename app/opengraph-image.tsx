@@ -26,7 +26,7 @@ export default async function OG() {
         }}
       >
         <img
-          src="https://sds-bem-unsoed.vercel.app/assets/logo.svg"
+          src="/assets/logo.svg"
           alt="SDS Logo"
           width={80}
           height={80}
