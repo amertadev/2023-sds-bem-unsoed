@@ -13,6 +13,7 @@ import { Turnstile } from "./turnstile"
 import Snackbar from '@mui/joy/Snackbar';
 import PlaylistAddCheckCircleRoundedIcon from '@mui/icons-material/PlaylistAddCheckCircleRounded';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import AutoTurnstile from "./turnstileauto"
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -37,13 +38,8 @@ export function PartnerForm() {
   const [sitekey, setSitekey] = useState("1x00000000000000000000AA");
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const currentUrl = window.location.href;
-      if (currentUrl === "http://localhost:3000/partner") {
-        setSitekey("1x00000000000000000000AA");
-      } else {
-        setSitekey("0x4AAAAAAAdZ0q7tbHhk1Byx");
-      }
+    if (process.env.NODE_ENV === 'production') {
+      setSitekey("0x4AAAAAAAdZ0q7tbHhk1Byx");
     }
   }, []);
 
@@ -195,13 +191,23 @@ export function PartnerForm() {
             name="turnstileResponse"
             render={({ field }) => (
               <FormItem>
-                <Turnstile
-                  sitekey={sitekey}
-                  onVerify={(token) => {
-                    field.onChange(token);
-                    setTurnstileResponse(token);
-                  }}
-                />
+                {process.env.NODE_ENV === 'production' ? (
+                  <AutoTurnstile
+                    sitekey={sitekey}
+                    onVerify={(token) => {
+                      field.onChange(token);
+                      setTurnstileResponse(token);
+                    }}
+                  />
+                ) : (
+                  <Turnstile
+                    sitekey={sitekey}
+                    onVerify={(token) => {
+                      field.onChange(token);
+                      setTurnstileResponse(token);
+                    }}
+                  />
+                )}
                 <FormMessage />
               </FormItem>
             )}

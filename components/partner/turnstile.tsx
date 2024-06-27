@@ -7,7 +7,10 @@ interface TurnstileProps {
 
 declare global {
   interface Window {
-    turnstile: any;
+    turnstile: {
+      ready: (callback: () => void) => void;
+      render: (container: string | HTMLElement, options: { sitekey: string; callback: (token: string) => void; appearance?: "always" | "execute" | "invisible" | undefined; auto_callback?: boolean | undefined; }) => void;
+    };
   }
 }
 
