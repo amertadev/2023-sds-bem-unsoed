@@ -8,12 +8,10 @@ import { Input } from "../shadcnui/input"
 import { Button } from "../shadcnui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../shadcnui/select"
 import { Textarea } from "../shadcnui/textarea"
-import { useState, useEffect } from "react"
-import { Turnstile } from "./turnstile"
+import { useState } from "react"
 import Snackbar from '@mui/joy/Snackbar';
 import PlaylistAddCheckCircleRoundedIcon from '@mui/icons-material/PlaylistAddCheckCircleRounded';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-import AutoTurnstile from "./turnstileauto"
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -24,7 +22,6 @@ const formSchema = z.object({
     required_error: "Please select a partnership type.",
   }),
   notes: z.string().optional(),
-  turnstileResponse: z.string().min(1, { message: "Please complete the Cloudflare check." }),
 });
 
 export function PartnerForm() {
@@ -34,14 +31,6 @@ export function PartnerForm() {
     message: '',
     severity: 'success' as 'success' | 'error'
   });
-  const [turnstileResponse, setTurnstileResponse] = useState<string | null>(null);
-  const [sitekey, setSitekey] = useState("1x00000000000000000000AA");
-
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      setSitekey("0x4AAAAAAAdZ0q7tbHhk1Byx");
-    }
-  }, []);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -52,7 +41,6 @@ export function PartnerForm() {
       company: "",
       partnershipType: undefined,
       notes: "",
-      turnstileResponse: "",
     },
   });
 
@@ -186,33 +174,7 @@ export function PartnerForm() {
               </FormItem>
             )}
           />
-          <FormField
-            control={form.control}
-            name="turnstileResponse"
-            render={({ field }) => (
-              <FormItem>
-                {process.env.NODE_ENV === 'production' ? (
-                  <AutoTurnstile
-                    sitekey={sitekey}
-                    onVerify={(token) => {
-                      field.onChange(token);
-                      setTurnstileResponse(token);
-                    }}
-                  />
-                ) : (
-                  <Turnstile
-                    sitekey={sitekey}
-                    onVerify={(token) => {
-                      field.onChange(token);
-                      setTurnstileResponse(token);
-                    }}
-                  />
-                )}
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button type="submit" disabled={isSubmitting || !turnstileResponse} className="w-full">
+          <Button type="submit" disabled={isSubmitting} className="w-full">
             {isSubmitting ? "Submitting..." : "Submit"}
           </Button>
         </form>

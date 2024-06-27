@@ -4,7 +4,6 @@ import { sfPro, inter } from "./fonts";
 import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 import NavBar from "@/components/layout/navbar";
-import Script from 'next/script';
 
 export const metadata = {
   title: "Soedirman Digital School - BEM UNSOED",
@@ -20,12 +19,6 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-      <Script
-          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-          strategy="beforeInteractive"
-        />
-      </head>
       <body className={cx(sfPro.variable, inter.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
         <Suspense fallback="...">
