@@ -17,8 +17,8 @@ const AutoTurnstile: React.FC<AutoTurnstileProps> = ({ sitekey, onVerify }) => {
         window.turnstile.render(ref.current, {
           sitekey: sitekey,
           callback: onVerify,
-          appearance: 'invisible',
-          auto_callback: true
+          appearance: 'always',
+          auto_callback: true,
         });
       }
     };
