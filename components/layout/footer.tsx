@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="font-default text-sm opacity-70 flex flex-col gap-1">
             <Link className="hover:underline" href="/best-student">Best Student</Link>
             <Link className="hover:underline" href="/after-movie">After Movie</Link>
-            <Link className="hover:underline" href="/staff-sds">Staff SDS</Link>
+            <Link className="hover:underline" href="/organizers">Organizers</Link>
             <Link className="hover:underline" href="/partner">Partner</Link>
           </div>
         </div>

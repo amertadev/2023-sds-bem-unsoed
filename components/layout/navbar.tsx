@@ -29,7 +29,7 @@ export default function NavBar() {
             ></Image>
           </Link>
           <div className="flex lg:hidden">
-            <SheetDemo session={null} />
+            <SheetDemo />
           </div>
           <div className="hidden lg:flex justify-center gap-8 items-center">
             <Link href="/best-student" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
@@ -38,8 +38,8 @@ export default function NavBar() {
             <Link href="/after-movie" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
               After Movie
             </Link>
-            <Link href="/staff-sds" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
-              Staff SDS
+            <Link href="/organizers" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
+              Organizers
             </Link>
             <Link href="/partner" className="text-[#292a41]/70 font-display hover:text-[#292a41] transform duration-200 hover:underline">
               Partner

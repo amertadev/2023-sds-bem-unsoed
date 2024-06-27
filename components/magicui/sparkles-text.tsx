@@ -37,8 +37,7 @@ interface SparklesTextProps {
    * @description
    * The text to be displayed
    * */
-  text1: string;
-  text2: string;
+  text: string;
 
   /**
    * @default 10
@@ -61,8 +60,7 @@ interface SparklesTextProps {
 }
 
 const SparklesText: React.FC<SparklesTextProps> = ({
-  text1,
-  text2,
+  text,
   colors = { first: "#5b5d9b", second: "#66b3c9" },
   className,
   sparklesCount = 10,
@@ -107,7 +105,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
 
   return (
     <div
-      className={cn("text-6xl font-bold", className)}
+      className={cn("text-4xl font-bold", className)}
       {...props}
       style={
         {
@@ -121,7 +119,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
           <Sparkle key={sparkle.id} {...sparkle} />
         ))}
         <strong className="bg-gradient-to-r from-[var(--sparkles-first-color)] to-[var(--sparkles-second-color)] bg-clip-text text-transparent">
-          {text1}<br/><span className="text-3xl">{text2}</span>
+          {text}
         </strong>
       </span>
     </div>
