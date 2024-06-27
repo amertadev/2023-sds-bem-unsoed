@@ -23,8 +23,7 @@ export default async function RootLayout({
       <head>
       <Script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-          async
-          defer
+          strategy="beforeInteractive"
         />
       </head>
       <body className={cx(sfPro.variable, inter.variable)}>
